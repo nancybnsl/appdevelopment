@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Fis Bank Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding id="welcome">
+<ion-list>
+<ion-item>
+<ion-input type="text" placeholder="Enter Customerid" id="customerid" class="marginTop" [(ngModel)]="customerId" (change)="onCustomerIdChange()"></ion-input>
+</ion-item>
+<button ion-button block id="goBtn" class="marginTop" (click)="getCustomerDetails()" [disabled]="!isBtnEnabled">Go</button>
+
+<!-- <ion-label>{{customerId}}</ion-label>
+<ion-label>{{isBtnEnabled}}</ion-label> -->
+</ion-list>
+</ion-content>
